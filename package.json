@@ -2,7 +2,7 @@
   "name": "books-shop-crud",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/Tate-T/books-shop-crud",
+  "homepage": "https://tate-t.github.io/books-shop-crud/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel src/index.html",

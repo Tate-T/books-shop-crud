@@ -1,0 +1,64 @@
+{
+    "books": [
+        {
+            "title": "Harry Potter and the Philosopher's Stone",
+            "price": 300,
+            "image": "https://static.wikia.nocookie.net/harrypotter/images/7/7a/Harry_Potter_and_the_Philosopher%27s_Stone_%E2%80%93_Bloomsbury_2014_Children%27s_Edition_%28Paperback_and_Hardcover%29.jpg/revision/latest?cb=20170109041611",
+            "author": "J.K.Rowling"
+        },
+        {
+            "title": "Harry Potter and the Chamber of Secrets",
+            "price": 300,
+            "image": "https://shop.dinternal-education.ua/store-uploads/products/product/2021/07/14/9781408855669.jpg",
+            "author": "J.K.Rowling"
+        },
+        {
+            "title": "Harry Potter and the Prisoner of Azkaban",
+            "price": 300,
+            "image": "https://static.yakaboo.ua/media/catalog/product/9/7/9781408855676_309040.jpeg",
+            "author": "J.K.Rowling"
+        },
+        {
+            "title": "Harry Potter and the Goblet of Fire",
+            "price": 300,
+            "image": "https://m.media-amazon.com/images/I/81zeKRGCPpL.jpg",
+            "author": "J.K.Rowling"
+        },
+        {
+            "title": "Harry Potter and the Order of the Phoenix",
+            "price": 300,
+            "image": "https://shop.dinternal-education.ua/store-uploads/products/product/2021/07/14/9781408855690.jpg",
+            "author": "J.K.Rowling"
+        },
+        {
+            "title": "Harry Potter and the Half-Blood Prince",
+            "price": 300,
+            "image": "https://img.imageboss.me/vsl/width/1920/format:webp/2023-11-22/757d9ce5_4251_11e8_80f3_000c29ae1566_84e95664_f5b9_11eb_8150_0050568ef5e6.jpg",
+            "author": "J.K.Rowling"
+        },
+        {
+            "title": "Harry Potter and the Deadly Hallows",
+            "price": 300,
+            "image": "https://nebobookshop.com.ua/cloud/files/uploads/books/9781408855713_us.jpg",
+            "author": "J.K.Rowling"
+        },
+        {
+            "title": "Harry Potter and the Cursed Child",
+            "price": 300,
+            "image": "https://m.media-amazon.com/images/I/91C1AKPmipL.jpg",
+            "author": "J.K.Rowling, Jonh Tiffany, Jack Thorne"
+        },
+        {
+            "title": "The Taking of Jake Livingston",
+            "price": 300,
+            "image": "https://www.mytutor.co.uk/blog/wp-content/uploads/2023/03/jakelivingston-jpg.webp",
+            "author": "Ayana Gray"
+        },
+        {
+            "title": "Mind Your Head",
+            "price": 300,
+            "image": "https://www.mytutor.co.uk/blog/wp-content/uploads/2022/02/9781471405310.jpg",
+            "author": "Juno Dawson"
+        }
+    ]
+}

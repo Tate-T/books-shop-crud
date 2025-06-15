@@ -1,0 +1,33 @@
+{
+  "name": "books-shop-crud",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Tate-T/books-shop-crud",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /books-shop-crud",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "server": "npx json-server books.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tate-T/books-shop-crud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tate-T/books-shop-crud/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "json-server": "^1.0.0-beta.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^2.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}

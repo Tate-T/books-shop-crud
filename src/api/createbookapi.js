@@ -1,4 +1,4 @@
-const createBookApi = (newBook) => {
+export const createBookApi = (newBook) => {
     const option = {
         method: "POST",
         body: JSON.stringify(newBook),

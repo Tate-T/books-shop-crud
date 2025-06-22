@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <h1>Books Shop</h1>
-    <button type="button">Add a new Book</button>
+    <button class="openModalButton" type="button">Add a new Book</button>
     <ul class="books-shop"></ul>
-    <div>
-        <form action="">
-            <label for="title">Book's Name</label>
-            <input id="title" type="text">
-            <label for="price">Book's Price</label>
-            <input id="price" type="text">
-            <label for="author">Book's Author</label>
-            <input id="author" type="text">
-            <label for="image">Book's Image</label>
-            <input id="image" type="text">
-            <button type="submit"></button>
-        </form>
+    <div class="backdrop is-hidden">
+      <form class="modalBookForm" action="">
+        <label class="booksName" for="title">Book's Name</label>
+        <input name="formTitle" class="titleForm" id="title" type="text" />
+        <label class="booksPrice" for="price">Book's Price</label>
+        <input name="formPrice" class="priceForm" id="price" type="text" />
+        <label class="booksAuthor" for="author">Book's Author</label>
+        <input name="formAuthor" class="authorForm" id="author" type="text" />
+        <label class="booksImage" for="image">Book's Image</label>
+        <input name="formImage" class="imageForm" id="image" type="text" />
+        <button class="formSubmit" type="submit">submit</button>
+      </form>
     </div>
     <script type="module" src="./index.js"></script>
-</body>
+  </body>
 </html>

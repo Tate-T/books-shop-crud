@@ -6,6 +6,7 @@ export const makeBooksMarkUp = (books) => {
         <p>${book.price}</p>
         <p>${book.author}</p>
         <button class="edit-button" type="button">Редагувати</button>
+        <button class="delete-button" type="button">Видалити</button>
         </div>
         <img src="${book.image}" alt="${book.title}">
     </li>`

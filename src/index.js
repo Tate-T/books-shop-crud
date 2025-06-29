@@ -4,6 +4,23 @@ import { getBookApi } from "./api/getbooksapi.js";
 
 import { createBookApi } from "./api/createbookapi.js"
 import { makeBooksMarkUp } from "./markup/makebooksmarkup.js";
+import { deleteBookApi } from "./api/deletebookapi.js";
+
+//Операція читання
+
+getBookApi().then((data) => {
+  bookShop.innerHTML = makeBooksMarkUp(data);
+  //Операція видалення
+    const buttonLinkDelete = document.querySelector(".delete-button");
+    console.log(buttonLinkDelete)
+    buttonLinkDelete.addEventListener("click", (event) => {
+      // deleteBookApi()
+      console.log(event.target)
+      console.log("click")
+    })
+
+});
+
 
 // операція додавання
 const bookShop = document.querySelector(".books-shop");
@@ -19,7 +36,7 @@ openModalButton.addEventListener("click", (event) => {
   event.preventDefault();
   modalBackdrop.classList.remove("is-hidden");
 });
-modalButtonSubmit.addEventListener("submit", (event) => {
+modalButtonSubmit.addEventListener("submit", async (event) => {
   event.preventDefault();
   const bookTitle = event.target.elements.formTitle.value;
   const bookPrice = event.target.elements.formPrice.value;
@@ -31,22 +48,14 @@ modalButtonSubmit.addEventListener("submit", (event) => {
     image: bookImage,
     author: bookAuthor
   };
-    createBookApi(book);
-    getBookApi().then((data) => {
-      bookShop.innerHTML = makeBooksMarkUp(data);
-    });
+  await createBookApi(book);
+  await getBookApi().then((data) => {
+    bookShop.innerHTML = makeBooksMarkUp(data);
+
+  });
   modalBackdrop.classList.add("is-hidden");
 });
 
-
-
-
-
-getBookApi().then((data) => {
-  bookShop.innerHTML = makeBooksMarkUp(data);
-});
-
-console.log();
 
 // операція редагування
 // const editForm = document.querySelector(".modalEditForm");
